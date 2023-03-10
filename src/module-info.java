@@ -5,5 +5,5 @@
  * @author Administrator
  *
  */
-module Project1 {
+module project1 {
 }
