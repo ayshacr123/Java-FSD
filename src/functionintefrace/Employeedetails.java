@@ -1,6 +1,6 @@
-/**
- * 
- */
+//Constructor for creating objects for the employee details;
+
+
 package functionintefrace;
 
 /**
