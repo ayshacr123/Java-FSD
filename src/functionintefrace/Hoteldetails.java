@@ -1,6 +1,6 @@
-/**
- * 
- */
+// Constructor for the Hotel booking for a specific location;
+
+
 package functionintefrace;
 
 /**
