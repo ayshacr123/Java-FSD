@@ -1,6 +1,5 @@
-/**
- * 
- */
+//  Constructor for creating objects for the customer details
+
 package functionintefrace;
 
 /**
