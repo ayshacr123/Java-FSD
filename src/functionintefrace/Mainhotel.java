@@ -1,3 +1,6 @@
+// Main class of hotel.java where the Ustian's food preferences and list of food are displayed and selected on the basis of their preference or choice;
+
+
 package cafe;
 
 import java.util.Arrays;
