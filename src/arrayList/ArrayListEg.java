@@ -1,6 +1,6 @@
-/**
- * 
- */
+// From the arraylist find out the elements whose sum is 25;
+
+
 package arrayList;
 
 import java.util.*;
