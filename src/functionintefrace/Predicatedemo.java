@@ -1,6 +1,7 @@
-/**
- * 
- */
+//Main class for the test.java where the product details are listed and printed;
+// Some examples in java 8 stream API is also worked out here;
+
+
 package functionintefrace;
 
 import java.util.ArrayList;
@@ -38,7 +39,7 @@ public class Predicatedemo {
 		List<String> filtered=s3.stream().filter(t->t.startsWith("T")).collect(Collectors.toList());
 		System.out.println(filtered);
 		
-		
+		// invoking the test.java in predicate demo
 		//filter price less thsn 10000
 		 List<Test> productsList = new ArrayList<Test>();  
 		productsList.add(new Test(1,"HP Laptop",25000));  
