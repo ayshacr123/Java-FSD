@@ -1,3 +1,6 @@
+// Getting the salaries of employee ;
+// Main class
+
 
 		package functionintefrace;
 
