@@ -1,6 +1,6 @@
-/**
- * 
- */
+// Constructor for the Ustian's.main class where their details are created;
+
+
 package functionintefrace;
 
 /**
