@@ -1,6 +1,7 @@
-/**
- * 
- */
+//Main program for the retrieving the customer details;
+
+
+
 package functionintefrace;
 
 import java.util.Arrays;
