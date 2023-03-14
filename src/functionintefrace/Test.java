@@ -1,6 +1,6 @@
-/**
- * 
- */
+//Creating constructor for calling in the predicate demo as objects;
+
+
 package functionintefrace;
 
 /**
