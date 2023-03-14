@@ -1,6 +1,6 @@
-/**
- * 
- */
+
+// Fibnocii Series 
+
 package array;
 
 import java.util.Scanner;
