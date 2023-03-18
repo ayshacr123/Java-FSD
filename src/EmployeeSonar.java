@@ -1,57 +1,52 @@
-/**
- * 
- */
-package batch3ust.sonarqube;
 
-/**
- * @author Administrator
- *
- */
-public class EmployeeSonar {
-	private String emp_number;
-	private String emp_name;
-	private int emp_age;
+package batch_three_ust.sonarqube;
+
+
+public class EmployeeSonar{
+	private String empNumber;
+	private String empName;
+	private int empAge;
 	private int noOfYear;
 	private double salary;
 	
 	
-	public EmployeeSonar(String emp_number, String emp_name, int emp_age, int noOfYear, double salary) {
+	public EmployeeSonar(String empNumber, String empName, int empAge, int noOfYear, double salary) {
 		super();
-		this.emp_number = emp_number;
-		this.emp_name = emp_name;
-		this.emp_age = emp_age;
+		this.empNumber = empNumber;
+		this.empName = empName;
+		this.empAge = empAge;
 		this.noOfYear = noOfYear;
 		this.salary = salary;
 	}
 	
 	
 
-	public int getEmp_age() {
-		return emp_age;
+	public int getEmpAge() {
+		return empAge;
 	}
 
 
 
-	public void setEmp_age(int emp_age) {
-		this.emp_age = emp_age;
+	public void setEmpAge(int empAge) {
+		this.empAge = empAge;
 	}
 
 
 
-	public String getEmp_number() {
-		return emp_number;
+	public String getEmpNumber() {
+		return empNumber;
 	}
 
-	public void setEmp_number(String emp_number) {
-		this.emp_number = emp_number;
+	public void setEmpNumber(String empNumber) {
+		this.empNumber = empNumber;
 	}
 
-	public String getEmp_name() {
-		return emp_name;
+	public String getEmpName() {
+		return empName;
 	}
 
-	public void setEmp_name(String emp_name) {
-		this.emp_name = emp_name;
+	public void setEmpName(String empName) {
+		this.empName = empName;
 	}
 
 	public int getNoOfYear() {
@@ -74,7 +69,7 @@ public class EmployeeSonar {
 
 	@Override
 	public String toString() {
-		return "EmployeeSonar [emp_number=" + emp_number + ", emp_name=" + emp_name + ", emp_age=" + emp_age
+		return "EmployeeSonar [empnumber=" + empNumber + ", empname=" + empName + ", empage=" + empAge
 				+ ", noOfYear=" + noOfYear + ", salary=" + salary + "]";
 	}
 
