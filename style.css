@@ -1,0 +1,62 @@
+body {
+	font-family: Arial, sans-serif;
+	color: #333333;
+}
+
+/* Style the header and logo */
+header {
+	background-color:#5f7699b9;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+    font-size: larger;
+}
+
+header img {
+	
+	margin-right: 20px;
+    text-align: center;
+    width: 200;
+    height: 350;
+}
+
+/* Style the navigation menu */
+nav {
+	margin-left: auto;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+    font-size:larger;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav li:hover {
+	text-decoration: underline;
+}
+
+/* Style the main content area */
+main {
+	margin: 20px;
+    color:azure;
+}
+
+/* Style the footer */
+footer {
+	background-color: #5f7699b9;
+	padding: 10px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+html{
+    background-image: url("banking.ust.jpg") ;
+    background-size: cover;  
+}
