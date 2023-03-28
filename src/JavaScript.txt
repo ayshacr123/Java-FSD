@@ -1,0 +1,40 @@
+---PRIME NUMBER USING JAVASCRIPT---
+
+function getPrimes(nums) {
+  const primes = [];
+  for (let i = 0; i < nums.length; i++) {
+    const num = nums[i];
+    let isPrime = true;
+    // 1 is not a prime number
+    if (num === 1) {
+      isPrime = false;
+    }
+    // 2 is a prime number
+    else if (num === 2) {
+      primes.push(num);
+    }
+    // Even numbers are not prime except 2
+    else if (num % 2 === 0) {
+      isPrime = false;
+    }
+    else {
+      // Check for odd factors up to the square root of the number
+      for (let j = 3; j <= Math.sqrt(num); j += 2) {
+        if (num % j === 0) {
+          isPrime = false;
+          break;
+        }
+      }
+    }
+    if (isPrime) {
+      primes.push(num);
+    }
+  }
+  return primes;
+}
+
+// Example usage
+const nums = [7, 12, 23, 31, 40];
+console.log(getPrimes(nums));
+
+

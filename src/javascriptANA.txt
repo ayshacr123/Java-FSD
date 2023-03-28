@@ -1,0 +1,45 @@
+------JAVASCRIPT ANAGRAM---------
+
+
+function isAnagram(word1, word2) {
+    // Convert the words to lowercase and remove whitespace
+    var str1 = word1.toLowerCase().replace(/ /g, '');
+    var str2 = word2.toLowerCase().replace(/ /g, '');
+    
+    // Check if the lengths of the strings are the same
+    if (str1.length !== str2.length) {
+        return false;
+    }
+    
+    // Convert the strings to arrays of characters, sort them, and convert them back to strings
+    var sortedStr1 = str1.split('').sort().join('');
+    var sortedStr2 = str2.split('').sort().join('');
+    
+    // Compare the sorted strings
+    return sortedStr1 === sortedStr2;
+}
+
+// Example usage
+console.log(isAnagram("listen", "silent")); // true
+console.log(isAnagram("hello", "world")); // false
+
+----another method--------
+function isAnagram(str1, str2) {
+// Remove any non-alphabetic characters and convert to lowercase
+const cleanStr1 = str1.replace(/[^\w]/g, '').toLowerCase();
+const cleanStr2 = str2.replace(/[^\w]/g, '').toLowerCase();
+// Sort the characters in both strings
+const sortedStr1 = cleanStr1.split('').sort().join('');
+const sortedStr2 = cleanStr2.split('').sort().join('');
+// Compare the sorted strings
+return sortedStr1 === sortedStr2;
+}
+// Example usage
+const string1 = "Listen";
+const string2 = "Silent";
+if (isAnagram(string1, string2)) {
+console.log(`${string1} and ${string2} are anagrams!`);
+}
+else {
+console.log(`${string1} and ${string2} are anagrams!`);
+}

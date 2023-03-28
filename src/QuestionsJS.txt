@@ -1,0 +1,74 @@
+--------------JAVASCRIPT ROMAN----------------
+
+function romanToNumber(roman) {
+  const romanNumeralMap = new Map([
+    ["I", 1],
+    ["V", 5],
+    ["X", 10],
+    ["L", 50],
+    ["C", 100],
+    ["D", 500],
+    ["M", 1000],
+  ]);
+
+  let result = 0;
+  for (let i = 0; i < roman.length; i++) {
+    const currentSymbol = roman[i];
+    const currentValue = romanNumeralMap.get(currentSymbol);
+    const nextSymbol = roman[i + 1];
+    const nextValue = romanNumeralMap.get(nextSymbol);
+    if (nextValue && nextValue > currentValue) {
+      result -= currentValue;
+    } else {
+      result += currentValue;
+    }
+  }
+  return result;
+}
+
+// Example usage:
+console.log(romanToNumber("IV")); // Output: 4
+console.log(romanToNumber("XIX")); // Output: 19
+console.log(romanToNumber("MCMXCIV")); // Output: 1994
+
+
+
+*****************************************target number**********************************
+
+
+function findPair(array, target) {
+  var pairs = [];
+
+  for (var i = 0; i < array.length; i++) {
+    for (var j = i + 1; j < array.length; j++) {
+      if (array[i] + array[j] === target) {
+        pairs.push([array[i], array[j]]);
+      }
+    }
+  }
+
+  return pairs;
+}
+var array = [1, 2, 3, 4, 5, 6];
+var target = 7;
+
+var pairs = findPair(array, target);
+
+console.log(pairs); 
+
+**********************REVERSE STRING******************
+
+
+
+
+function reverseString(str) {
+  // Check if string contains non-ASCII characters
+  if (!/^[\x00-\x7F]*$/.test(str)) {
+    throw new Error('Input contains non-ASCII characters.');
+  }
+  // Reverse the string using Array.reverse() and String.join()
+  return str.split('').reverse().join('');
+}
+console.log(reverseString('hello')); // Output: 'olleh'
+console.log(reverseString('world')); // Output: 'dlrow'
+
