@@ -1,40 +1,34 @@
-/**
- * 
- */
-package array;
-import java.util.*;
+package batch3ust.JavaLearning;
 
-/**
- * @author Administrator
- *
- */
+import java.util.Scanner;
 
 public class Palindrome {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		System.out.println("Enter a number : ");
-		Scanner s= new Scanner(System.in);
-		int num= s.nextInt();
-		int reverse=0,temp,remainder=0;
-		temp=num;
-		while(num>0) {
-			remainder=num%10;
-			reverse=reverse*10+remainder;
-			num=num/10;
-		}
-		
-		if(reverse==temp) {
-			System.out.println("The number is palindrome");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string");
+		String s =sc.nextLine();
+		int i=0,count=0;
+//		System.out.println(s.charAt(i));
+//		System.out.println(s.charAt(s.length()-1));
+//			while(s.charAt(i)!=s.charAt(s.length()-i)) {
+				while(i<s.length()-1/2) {
+				if(s.charAt(i)==s.charAt(s.length()-i-1)) {
+					count=count+1;
+				}
+				else {
+					count=count-1;
+					
+				}
+				i++;
+				}
+		if(count==s.length()-1/2) {
+			System.out.println("palindrome");
 		}
 		else {
-			System.out.println("The number is not palindrome");
+			System.out.println("No palindrome");
 		}
-		
 
 	}
-
 
 }
