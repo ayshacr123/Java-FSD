@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website - Contact</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="emblem.png" alt="Emblem" width="200" height="350">
+	</header>
+	<main>
+		<h1>Banking Details</h1>
+		<p>Fill out the details below to know the Interest amount</p>
+		
+			<body>
+			<script>
+document.addEventListener('DOMContentLoaded', function() {	
+			});
+			</script>	
+			  <script>
+
+					<p id="currentDate"></p>
+				  var currentDate = new Date();
+				  document.getElementById("currentDate").innerHTML = currentDate.toDateString();
+				</script>
+			
+			<form>
+
+				 <label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br></br>
+				
+				<label for="branch">Branch</label>
+				<input type="text" id="branch" name="branch"><br></br>
+				
+				<label for="aadhar">Enter your Aadhaar number:</label>
+				<input type="text" id="aadhar" name="aadhar" required pattern="[0-9]{12}"><br></br>
+				
+				<label for="pan">Enter your PAN number:</label>
+				<input type="text" id="pan" name="pan" required pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"><br></br>
+				
+				<label for="amount">Amount</label>
+				<input type="number" name="amount" min="0" required><br></br>
+				
+				<label for="time">Enter time:</label>
+				<input type="time" id="time" name="time" required><br></br>
+
+				<button type="submit">Calculate</button>
+				
+			  </form>
+			  </body>
+		<script>
+		
+				const form = Document.querySelector('form');
+				form.addEventListener('submit', function(event) {
+				  event.preventDefault(); // prevent the form from submitting and reloading the page
+				  
+				  const price = parseFloat(Document.getElementById('amount').value);
+				  const quantity = parseInt(Document.getElementById('time').value);
+				  const total = amount * time;
+				  
+				  alert(`Simple Interest : $${total}`);
+				});
+			  </script>
+
+			
+		
+	</main>
+	<footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+</body>
+</html>
